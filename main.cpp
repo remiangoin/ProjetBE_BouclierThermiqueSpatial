@@ -15,27 +15,16 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
+
+int Resolution1DAnalytique(k,rho,Cp,Tstar,Text,T0,t){
+
+}
+
 int Resolution1DParaConstants(k,rho,Cp,Tstar,Text,T0,t) {
-    // Diffusivité
-    double alpha = k / (rho * Cp);
-
-    // Facteur A (doit être 0 < A < 1)
-    double A = ((Tstar - Text) * M_PI) / (4.0 * (T0 - Text));
-    if (A <= 0.0 || A >= 1.0) {
-        fprintf(stderr, "Erreur: A doit être dans (0,1). Vérifie Text, T0, Tstar.\n");
-        return EXIT_FAILURE;
-    }
-
-    // Solution fermée pour h
-    double h = (M_PI / 2.0) / sqrt(-(1.0 / (alpha * t)) * log(A));
-
-    // Affichage
-    printf("alpha = %.3e m^2/s\n", alpha);
-    printf("A      = %.6f\n", A);
-    printf("h      = %.6f m  (%.2f cm)\n", h, 100.0 * h);
-    return h
+   
 }
 
 int Resolution1DParaVariaMethodeDecouplee(k,rho,Cp,Tstar,Text,T0,t) {
-    T
+
 }
+
