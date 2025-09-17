@@ -33,5 +33,9 @@ int Resolution1DParaConstants(k,rho,Cp,Tstar,Text,T0,t) {
     printf("alpha = %.3e m^2/s\n", alpha);
     printf("A      = %.6f\n", A);
     printf("h      = %.6f m  (%.2f cm)\n", h, 100.0 * h);
+    return h
+}
 
+int Resolution1DParaVariaMethodeDecouplee(k,rho,Cp,Tstar,Text,T0,t) {
+    T
 }
