@@ -7,6 +7,9 @@
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
+#include <Eigen/Dense>
+#include <iostream>
+
 
 using Matrix = std::vector<std::vector<double>>;
 
@@ -91,6 +94,8 @@ int affichage(Matrix Theta, const double T0, const double Text, const double L) 
     _pclose(gp);
     return EXIT_SUCCESS;
 }
+
+
 int main() {
     // Données
     const double Text  = 1273.15;
